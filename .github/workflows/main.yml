@@ -36,7 +36,7 @@ jobs:
 
       - name: Deploy to Lambda
         run: |
-          aws lambda update-function-code --function-name HelloLambda \
+          aws lambda update-function-code --function-name dev-InsurabilityIQ \
             --zip-file fileb://$GITHUB_WORKSPACE/deployment_package.zip
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
